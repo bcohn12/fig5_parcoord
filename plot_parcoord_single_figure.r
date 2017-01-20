@@ -39,4 +39,6 @@ points_with_costs <- fill_costs(points_dataframe, 7, fmax_vector)
 points_with_costs$TaskForce <- rep(15.775696081469723, 1000)
 colnames(points_with_costs) <- my_column_names
 
-parcoord(points_with_costs, var.label=TRUE, ylim=c(0,1))
+# parcoord(points_with_costs, var.label=TRUE, ylim=c(0,1))
+library(GGally)
+ggparcoord(points_with_costs)
