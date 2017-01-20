@@ -41,7 +41,7 @@ colnames(points_with_costs) <- my_column_names
 
 # parcoord(points_with_costs, var.label=TRUE, ylim=c(0,1))
 
-scale_columns_
+
 
 library(GGally)
 p <- ggparcoord(points_with_costs, scale='globalminmax', groupColumn = "FDP")
